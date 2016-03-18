@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <!--引入一个google字体库的字体设置-->
+    <!--为什么使用cdn
+      1.cdn服务器的宽带要优于自己的服务器
+      2.cdn方式引入的文件会在浏览器中长缓存
+    -->
+    <link href="http://fonts.useso.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+    <!-- 闪屏页 -->
+    <div class="slider shanpin">
+      <ul class="slides">
+        <li class="active">
+          <img src="images/shan1.jpg" alt="">
+        </li>
+        <li class="moren">
+          <img src="images/shan2.jpg" alt="">
+        </li>
+        <li class="moren">
+          <img src="images/shan3.jpg" alt="">
+        </li>
+        <li class="moren">
+            <img src="images/shan4.jpg" alt="">
+            <a id="jinru" class="waves-effect waves-light btn">进 入 首 页</a>
+        </li>
+      </ul>
+    </div>
+    <!-- 首页登录 -->
+    <div class="slider denglv">
+      <div class="logobox">
+        <img src="images/logo.png" alt="">
+      </div>
+      <div class="denglv-con">
+        <div class="name"></div>
+        <div class="mima"></div>
+        <div class="tishi cf">
+          <div class="tishi-left">
+            <input id="jizhu" type="checkbox"> 记住密码
+          </div>
+          <div class="tishi-right">
+            忘记密码？
+          </div> 
+        </div>
+        <div class="xian"></div>
+        <a class="deng" href="#">登 录</a>
+        <a class="youke" href="#">游 客 试 用</a>
+        <div class="xian xian1"></div>
+        <div class="xian2 cf">
+          <div class="xian2-1"></div>
+          <div class="xian2-2"></div>
+        </div>
+        <div class="guangyu">
+          <img src="images/guangyu.png" alt="">
+        </div>
+      </div>
+    </div> 
+    
+
+    <!-- 首页导航 -->
+    <div class="neiron">
+    <nav>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#!">个人中心</a></li>
+        <li><a href="#!">我的收藏</a></li>
+      </ul>
+      <ul id="slide-out" class="side-nav">
+        <li><a href="#!">个人中心</a></li>
+        <li><a href="#!">我的收藏</a></li>
+      </ul>
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="iconfont icon-0018shouye"></i></a>
+    </nav> 
+    <!-- 栏目导航 -->
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s3"><a class="active" href="#test1">国内新闻</a></li>
+        <li class="tab col s3"><a href="#test2">国外新闻</a></li>
+        <li class="tab col s3"><a href="#test3">时事要闻</a></li>
+        <li class="tab col s3"><a href="#test4">科技阅览</a></li>
+      </ul>
+    </div>
+    <div id="test1" class="col s12">
+    	<div class="row">
+    	  <div class="col s12 m6">
+    	    <div class="card  red">
+    	      <div class="card-content white-text">
+    	        <span class="card-title">Card Title</span>
+    	        <p>I am a very simple card. I am good at containing small bits of information.
+    	        I am convenient because I require little markup to use effectively.</p>
+    	      </div>
+    	      <div class="card-action">
+    	        <a href="#">This is a link</a>
+    	        <a href="#">This is a link</a>
+    	      </div>
+    	    </div>
+    	  </div>
+    	</div>
+    	<div class="row">
+    	  <div class="col s12 m6">
+    	    <div class="card blue-grey darken-1">
+    	      <div class="card-content white-text">
+    	        <span class="card-title">Card Title</span>
+    	        <p>I am a very simple card. I am good at containing small bits of information.
+    	        I am convenient because I require little markup to use effectively.</p>
+    	      </div>
+    	      <div class="card-action">
+    	        <a href="#">This is a link</a>
+    	        <a href="#">This is a link</a>
+    	      </div>
+    	    </div>
+    	  </div>
+    	</div>
+    </div>
+    <div id="test2" class="col s12">Test 2</div>
+    <div id="test3" class="col s12">Test 3</div>
+    <div id="test4" class="col s12">Test 4</div> 
+
+    </div>
+  
+
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="http://libs.useso.com/js/jquery/2.1.1-rc2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="js/zepto.min.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
