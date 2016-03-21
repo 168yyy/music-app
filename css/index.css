@@ -20,6 +20,10 @@
 body{
   font-family: "微软雅黑";
 }
+input{
+  margin:0;
+  padding: 0;
+}
 .button-collapse{
   margin-left: 10px;
 }
@@ -61,40 +65,48 @@ body{
   background: #e1b6af;
 }
 #jinru{
+  font-size: 16px;
   position: absolute;
-  bottom:8%;
+  bottom:10%;
   left: 50%;
-  margin-left: -55px;
+  margin-left: -67px;
 }
 .btn{
   font-size: 14px;
   background: #7e57c2;
 }
 .logobox{
-  width: 200px;
-  height: 180px;
-  margin: 0 auto;
-  margin-top: 40px;
+  position: absolute;
+  top:9%;
+  width: 100%;
 }
 .logobox img{
-  width: 200px;
+  display: block;
+  width: 48%;
+  margin:0 auto;
 }
 .denglv-con{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:34%;
+  bottom: 9.5%;
   margin: 0 auto;
   width: 77%;
 }
 .name,.mima{
-  
-  height: 40px;
+  height: 45px;
   width: 100%;
   border-radius: 6px;
   background: #f2e8e6;
+  overflow: hidden;
+  line-height: 45px;
 }
 .mima{
   margin-top: 15px;
 }
 .tishi{
-  margin-top: 10px;
+  margin-top: 18px;
   line-height: 20px;
   color: #b4a3a0;
 
@@ -123,7 +135,7 @@ body{
   margin-right: 1px;
 }
 .xian{
-  margin-top: 9px;
+  margin-top: 16px;
   width: 100%;
   height: 2px;
   background: #e28590;
@@ -140,9 +152,12 @@ body{
   text-align: center;
   color: #f2e8e6;
 }
+.jinruzhuye{
+  transition: all .5s ease-out;
+}
 .youke{
   display: block;
-  height: 40px;
+  height: 44px;
   width: 100%;
   font-size: 18px;
   line-height: 40px;
@@ -153,9 +168,12 @@ body{
   margin-top: 0px;
 }
 .xian2{
+  position: absolute;
+  bottom: 17%;
+  left: 0;
+  right: 0;
   width: 80%;
   margin:0 auto;
-  margin-top: 80px;
 }
 .xian2-1{
   width: 30%;
@@ -170,9 +188,31 @@ body{
   float: right;
 }
 .guangyu{
-
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 50px;
   width: 170px;
   margin:0 auto;
-  margin-top: 10px;
+}
+.yonghutu,.yonghukuan,.mimatu,.mimakuan{
+  float: left;
+}
+input[type=text].yonghukuan,input[type=text].mimakuan{
+  width: 80%;
+  height: 45px;
+  font-size: 17px;
+  line-height: 40px;
+  color: #393939;
+  margin:0;
+  border:none;
+  outline: none;
+  background: rgba(0,0,0,0);
+}
+.yonghutu,.mimatu{
+  margin-top: 9px;
+  margin-left: 20px;
+  margin-right: 10px;
+  width: 27px;
 }

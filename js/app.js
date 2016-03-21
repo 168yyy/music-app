@@ -35,6 +35,14 @@ $(function () {
 		$('div').remove('.shanpin');
 		$('.denglv').css({display:'block'});
 	})
+	$('.jinruzhuye').bind('tap',function(){
+		$(this).css({background:'red'});
+		setInterval(function(){
+			$('.denglv').css({display:'none'});
+			$('.neiron').css({display:'block'});
+		},500);
+		
+	})
 
 	
 
